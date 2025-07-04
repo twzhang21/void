@@ -22,6 +22,11 @@ header p {
   font-size: 1.2rem;
 }
 
+
+
+/* Navigation tab below under gallery */
+
+
 .nav {
   list-style: none;
   display: flex;
@@ -30,12 +35,14 @@ header p {
   background-color: #333;
   padding: 1rem;
   margin: 0;
+  position: relative;
 }
 
 .nav li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  position: relative;
 }
 
 .nav li a:hover {
@@ -81,17 +88,17 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 2.8rem;
+  top: 100%; /* positions it directly below the parent */
   left: 0;
   background-color: #444;
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
   flex-direction: column;
 }
 
 .dropdown-content li {
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
 }
 
@@ -107,6 +114,6 @@ footer {
   background-color: #555;
 }
 
-.dropdown:hover .dropdown-content {
+.nav li:hover .dropdown-content {
   display: flex;
 }
