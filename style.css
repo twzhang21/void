@@ -124,3 +124,17 @@ footer {
   background: #f2f2f2;
   font-size: 0.9rem;
 }
+
+/* One-photo-per-row gallery */
+.gallery.one-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gallery.one-column img {
+  width: 100%;
+  max-width: 800px; /* optional: keep images from being too huge */
+  margin: 0 auto;   /* centers images */
+}
+
